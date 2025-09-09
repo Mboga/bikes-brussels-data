@@ -1,0 +1,5 @@
+pyspark
+plotly
+pandas
+nbformat
+dbt-duckdb
