@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: daily_bike_counts
+    description: "Aggregated bike count data, providing a daily total count and average speed per road."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - observation_date
+            - road_name
+    columns:
+      - name: observation_date
+        description: "The calendar date for the aggregated bike counts."
+        tests:
+          - not_null
+      - name: road_name
+        description: "The name of the road where the bike counts were recorded."
+        tests:
+          - not_null
+      - name: total_daily_count
+        description: "The total number of bikes counted for a specific road on a given day."
+        tests:
+          - not_null
+      - name: average_daily_speed
+        description: "The average speed of all recorded bikes on a specific road for a given day."
