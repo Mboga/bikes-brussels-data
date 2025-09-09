@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bike_counts_raw
+    description: A raw, immutatbe copy of the bike count data
+    tables:
+      - name: bike_counts
+        config:
+          external_location: '/Users/nicholus/Documents/GitHub/bikes-brussels-data/bike_count_project/data/bike_counts.parquet/*.parquet'
