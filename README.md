@@ -10,6 +10,9 @@ source bikes/bin/activate
 pip install -r requirements.txt 
 
 ```
+# dbt project:
+
+    bike_count_project/
 
 # Tech Stack
  - Apache Spark
