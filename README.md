@@ -1,6 +1,16 @@
 # bikes-brussels-data
 big data exploration using brussels bike data API
 
+# Environment set up
+
+```
+bash
+python3 -m venv bikes
+source bikes/bin/activate
+pip install -r requirements.txt 
+
+```
+
 # Tech Stack
  - Apache Spark
  - dbt (EL[T])
